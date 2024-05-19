@@ -1,0 +1,30 @@
+{
+  "name": "quicktype-json-typescript-validation",
+  "version": "1.0.0",
+  "description": "Quicktype example validating json using TypeScript interfaces",
+  "main": "./build/main.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx ./src/main.ts",
+    "start": "node ./build/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "quicktype": "quicktype ./src/types/*.ts -o ./src/convert.ts"
+  },
+  "keywords": [
+    "quicktype",
+    "json",
+    "typescript",
+    "validation",
+    "interface",
+    "type"
+  ],
+  "author": "kmturley",
+  "license": "MIT",
+  "dependencies": {
+    "quicktype-core": "^23.0.168"
+  },
+  "devDependencies": {
+    "tsx": "^4.10.5",
+    "typescript": "^5.4.5"
+  }
+}
